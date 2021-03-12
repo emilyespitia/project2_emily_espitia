@@ -1,0 +1,348 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+
+/* ***************Font Family *************** */
+/* font-family: 'Geosans' ; sans-serif; */
+
+/* ***************Font Family *************** */
+
+
+/******************** UNIVERSAL DEVICE STYLING ********************/
+article, aside, details, figcaption, figure, footer, header, main, nav, section, summary {
+    display:block;
+}
+
+body{
+	font-family: 'Jost', sans-serif;
+	background: linear-gradient(180deg, white, #fbe5d62e, white);
+}
+
+.big-container{
+	padding-bottom: 15%;
+}
+
+body.color2 {
+    background: linear-gradient(28deg, #fde6d6, white, #dadada);
+    font-family: 'Jost', sans-serif;
+}
+
+
+/* Turn Off DESKTOP NAV Menu (HEADER/FOOTER) */
+.desktop-menu {
+	display: none;
+}
+
+.desktop-menu1 {
+	display:none;
+}
+
+/* ************** HAMBURGER MENU STYLE <nav classs="menu"> ****************** */
+.hamburger{
+  background:none;
+  position:absolute;
+  top:0;
+  right:0;
+  line-height:45px;
+  padding:5px 15px 0px 15px;
+  color:#999;
+  border:0;
+  font-size:1.4em;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
+}
+.cross{
+  background:none;
+  position:absolute;
+  top:0px;
+  right:0;
+  padding:7px 15px 0px 15px;
+  color:#999;
+  border:0;
+  font-size:3em;
+  line-height:65px;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
+}
+.menu{z-index:1000000; font-weight:bold; font-size:0.8em; width:100%; background:	silver;  position:absolute; text-align:center; font-size:12px;}
+.menu ul {margin: 0; padding: 0; list-style-type: none; list-style-image: none;}
+.menu li {display: block; padding:15px 0 15px 0; border-bottom:#dddddd 1px solid;}
+.menu li:hover{display: block;  background:#f1b7a7; padding:15px 0 15px 0; border-bottom:#dddddd 1px solid;}
+.menu ul li a { text-decoration:none;  margin: 0px; color:	#FFFF00;}
+.menu ul li a:hover {  color: 	#FFFF00; text-decoration:none;}
+.menu a{text-decoration:none; color:#666;}
+.menu a:hover{text-decoration:none; color:#666;}
+
+
+
+/*****************************  INDEX.hmtl MOBILE STYLES *****************************/
+/* * ******* images ******** */
+
+.home-img {
+	width: 100%;
+    margin-top: 13%;
+    max-width: 100%;
+	}
+
+
+.home figcaption{
+	text-align: center;
+  font-size: 0.8em;
+  padding-top: 1%;
+	padding-left: 6%;
+}
+
+/*****************************  ABOUT.hmtl MOBILE STYLES *****************************/
+
+/* * ******* images ******** */
+
+.hi-img {
+    width: 66%;
+    margin: 16% auto 0 auto;
+    max-width: 620px;
+    display: block;
+	}
+
+/* greeting */
+h1.welcome{
+		text-align: center;
+	   margin-top: 5%;
+		}
+
+p.welcome{
+	text-align: center;
+  margin: 4%;
+}
+
+/* why work with me? */
+h2.pink-work {
+    margin-top: 9%;
+    text-align: center;
+    background-color: #f1b7a7;
+    width: 86%;
+    margin: 8% auto;
+	}
+
+/* education */
+article.row {
+	text-align: center;
+	margin-top: 11%;
+}
+
+.fullerton {
+	margin-top: 4%;
+}
+
+.florida {
+	margin-top: 6%;
+}
+
+/* social media */
+aside.social{
+	margin-top: 8%;
+}
+
+div.social-content ul{
+	list-style-type:none;
+}
+
+/* social skills */
+.social-content{
+	margin-top: 10%;
+}
+
+/* digital skills */
+aside.creative{
+	margin-top: 8%;
+}
+.creative-content{
+	margin-top: 10%;
+}
+
+div.creative-content ul {
+	list-style-type: none;
+}
+
+
+
+
+
+																								/* MEDIA QUERIES */
+
+/* ******************************************START 320px MAX MEDIA QUERY****************************************** */
+@media (max-width: 320px){
+
+	figcaption{
+		display: none;
+	}
+}
+
+/* ******************************************START 526px MAX MEDIA QUERY****************************************** */
+@media (min-width: 526px){
+
+/* about */
+.font-tablet1{
+	font-size: 1.3rem;
+}
+
+.font-tablet2{
+	font-size: 1.2rem;
+}
+
+
+}
+
+/* ******************************************START 700px MIN MEDIA QUERY****************************************** */
+@media (min-width: 700px) {
+
+/* **** TURN OFF HAMBURGER MENU ****** */
+	.menu, .hamburger, .cross{
+		display: none;
+	}
+
+	.big-container{
+		padding-bottom: 1%;
+	 	margin-top: -7%;
+	}
+
+/* **************** DESKTOP NAV ***************** */
+.desktop-menu {
+	display: block;
+	text-align: center;
+	margin: 10% 6% 12% 0px;
+	font-size: 1.2rem;
+}
+
+.desktop-menu ul li {
+		display: inline;
+		padding: 5% 0 0 5%;
+}
+
+.desktop-menu ul li a{
+	color: black;
+	text-decoration: none;
+}
+
+.desktop-menu ul li a:hover{
+	color: #f1b7a7;
+}
+
+/* ************************ CONTENT ****************** */
+
+
+
+/* about ***********************/
+p.welcome {
+    text-align: center;
+    margin: 0%;
+    font-size: 1.35rem;
+	}
+
+article.row {
+    text-align: center;
+    margin-top: -2%;
+	}
+
+h2.pink-work {
+padding: 2% 0;
+}
+
+/* ************ UNIVERSAL BOTTOM NAV ********* */
+.desktop-menu1{
+		display: block;
+		width: 100%;
+		/* list-style-type: none; */
+		text-align: center;
+		margin: 36% 0 13% 0;
+		font-size: 1.2rem;
+}
+
+.desktop-menu1 ul{
+	margin-top: -17%;
+	margin-top: -27%;
+}
+
+.desktop-menu1 ul {
+		margin-top: -27%;
+}
+
+/* links styling */
+.desktop-menu1 ul li {
+	display: inline;
+	padding: 5% 0 0 5%;
+}
+
+.desktop-menu1 ul li a {
+	color: black;
+	text-decoration: none;
+}
+
+.desktop-menu1 ul li a:hover{
+	color: #f1b7a7;
+}
+
+}
+
+/* ******************************************START 800px MIN MEDIA QUERY****************************************** */
+@media (min-width: 800px) {
+/************************************* ABOUT.html */
+h2.pink-work {
+	    text-align: center;
+	    background-color: #f1b7a7;
+	    width: 67%;
+	    margin: 6% 0% 10% 15%;
+}
+
+/* education */
+section.education-content {
+		width: 31%;
+    float: left;
+    margin: 0 -1% 0 5%;
+}
+
+/* social media skills */
+section.social {
+	    margin: -28px -16% 0 0;
+	    float: left;
+	    width: 35%;
+	}
+
+section.social ul {
+	line-height: 3.3rem;
+	width: 75%;
+	margin-left: 12%;
+}
+
+/* digital skills */
+section.creative {
+	margin-top: -3%;
+	float: right;
+	width: 31%;
+	}
+
+.creative-content ul{
+	line-height: 3.3rem;
+}
+
+/* footer nav */
+.desktop-menu1 ul{
+	margin-top: 58%;
+	/* line-height: 3.3rem; */
+}
+
+
+.big-container {
+    padding-bottom: 9%;
+    margin-top: -7%;
+		max-width: 800px;
+		margin-left: auto;
+		margin-right: auto;
+
+}
