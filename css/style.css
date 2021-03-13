@@ -162,6 +162,7 @@ div.social-content ul{
 aside.creative{
 	margin-top: 8%;
 }
+
 .creative-content{
 	margin-top: 10%;
 }
@@ -187,7 +188,7 @@ div.creative-content ul {
 
 .work-container img {
     width: 65%;
-		max-width: 1000px;
+		max-width: 800px;
     margin: 0 auto;
     display: block;
     padding-bottom: 6%;
@@ -197,6 +198,21 @@ div.creative-content ul {
 		margin-top: 10%;
 		padding-bottom: 13%;
 		}
+
+/*****************************  contact.hmtl MOBILE STYLES *****************************/
+.contact-img {
+	width: 70%;
+	max-width: 1000px;
+}
+
+.chat-container{
+
+	border-style: solid;
+	border-width: 5px;
+}
+
+
+
 
 
 																								/* MEDIA QUERIES */
@@ -221,37 +237,44 @@ div.creative-content ul {
 	font-size: 1.2rem;
 }
 
+}
 
 /* ******************************************START 600px MAX MEDIA QUERY****************************************** */
 @media (min-width: 600px) {
 
-.uf-container2{
-	display: flex;
-}
 
-.dsc-container2 {
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-	justify-content: center;
-}
-
-
-.uf-container2 {
-    display: flex;
-    align-content: center;
-    flex-direction: row;
-    justify-content: center;
+/*****work.html**********/
+	.uf-container2{
+		display: flex;
 	}
+
+	.dsc-container2 {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+		   justify-content: center;
+	}
+
+
+	.uf-container2 {
+	    display: flex;
+	    align-content: center;
+	    flex-direction: row;
+	    justify-content: center;
+		}
 
 .dsc-work {
 	margin-right: -6%;
 }
 
+.gator2{
+	width: 100%;
+}
+
 .work-container img {
     margin: 0 auto;
     display: block;
-		width: 75%;
+		width: 65%;
 }
 
 /* ******************************************START 700px MIN MEDIA QUERY****************************************** */
@@ -268,7 +291,7 @@ div.creative-content ul {
 	}
 
 
-/* **************** DESKTOP NAV ***************** */
+/* **************** universal- TURN ON DESKTOP NAV (TOP) ***************** */
 .desktop-menu {
 	display: block;
 	text-align: center;
@@ -290,33 +313,14 @@ div.creative-content ul {
 	color: #f1b7a7;
 }
 
-/* ************************ CONTENT ****************** */
 
-
-
-/* about ***********************/
-p.welcome {
-    text-align: center;
-    margin: 0%;
-    font-size: 1.35rem;
-	}
-
-article.row {
-    text-align: center;
-    margin-top: -2%;
-	}
-
-h2.pink-work {
-padding: 2% 0;
-}
-
-/* ************ UNIVERSAL BOTTOM NAV ********* */
+/* **************** univeral -TURN ON DESKTOP NAV (Bottom) ***************** */
 .desktop-menu1{
 		display: block;
 		width: 100%;
 		/* list-style-type: none; */
 		text-align: center;
-		margin: 36% 0 13% 0;
+		margin: 37% 0 4% 0;
 		font-size: 1.2rem;
 }
 
@@ -344,11 +348,33 @@ padding: 2% 0;
 	color: #f1b7a7;
 }
 
+/******************** INDEX.html ***********/
+/* bottom nav */
+.desktop-menu1.home-bottom ul {
+    margin-top: -14%;
 }
+
+/******************** ABOUT.html ***********/
+p.welcome {
+    text-align: center;
+    margin: 0%;
+    font-size: 1.35rem;
+	}
+
+article.row {
+    text-align: center;
+    margin-top: -2%;
+	}
+
+h2.pink-work {
+padding: 2% 0;
+}
+
 
 /* ******************************************START 800px MIN MEDIA QUERY****************************************** */
 @media (min-width: 800px) {
-/************************************* ABOUT.html */
+
+/******************** ABOUT.html ***********/
 h2.pink-work {
 	    text-align: center;
 	    background-color: #f1b7a7;
@@ -387,13 +413,6 @@ section.creative {
 	line-height: 3.3rem;
 }
 
-/* footer nav */
-.desktop-menu1 ul{
-	margin-top: 58%;
-	/* line-height: 3.3rem; */
-}
-
-
 .big-container {
     padding-bottom: 9%;
     margin-top: -7%;
@@ -403,17 +422,20 @@ section.creative {
 
 }
 
-
-
-/* work.html */
-
-.desktop-menu1 {
-    margin: -55% 0 13% 0;
+/*bottom nav */
+footer.desktop-menu1.about-bottom-footer{
+	margin: 80% 0 4% 0;
 }
 
-/* .uf-container2{
-	width: 80%; */
+
+/******************** WORK.html ***********/
+
+/*bottom nav */
+	.desktop-menu1.work-footer {
+	    margin: 25% 0 7% 0;
 }
+
+
 
 
 
