@@ -171,7 +171,7 @@ div.creative-content ul {
 }
 
 
-/*****************************  ABOUT.hmtl MOBILE STYLES *****************************/
+/*****************************  work.hmtl MOBILE STYLES *****************************/
 .text {
 	background: #f1b7a7;
 	padding: 11% 0 2% 1;
@@ -186,7 +186,8 @@ div.creative-content ul {
 }
 
 .work-container img {
-    width: 84%;
+    width: 65%;
+		max-width: 1000px;
     margin: 0 auto;
     display: block;
     padding-bottom: 6%;
@@ -196,10 +197,6 @@ div.creative-content ul {
 		margin-top: 10%;
 		padding-bottom: 13%;
 		}
-
-
-
-
 
 
 																								/* MEDIA QUERIES */
@@ -225,6 +222,36 @@ div.creative-content ul {
 }
 
 
+/* ******************************************START 600px MAX MEDIA QUERY****************************************** */
+@media (min-width: 600px) {
+
+.uf-container2{
+	display: flex;
+}
+
+.dsc-container2 {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+	justify-content: center;
+}
+
+
+.uf-container2 {
+    display: flex;
+    align-content: center;
+    flex-direction: row;
+    justify-content: center;
+	}
+
+.dsc-work {
+	margin-right: -6%;
+}
+
+.work-container img {
+    margin: 0 auto;
+    display: block;
+		width: 75%;
 }
 
 /* ******************************************START 700px MIN MEDIA QUERY****************************************** */
@@ -239,6 +266,7 @@ div.creative-content ul {
 		padding-bottom: 1%;
 	 	margin-top: -7%;
 	}
+
 
 /* **************** DESKTOP NAV ***************** */
 .desktop-menu {
@@ -372,5 +400,22 @@ section.creative {
 		max-width: 800px;
 		margin-left: auto;
 		margin-right: auto;
+
+}
+
+
+
+/* work.html */
+
+.desktop-menu1 {
+    margin: -55% 0 13% 0;
+}
+
+/* .uf-container2{
+	width: 80%; */
+}
+
+
+
 
 }
