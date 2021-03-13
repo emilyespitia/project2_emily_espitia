@@ -185,12 +185,17 @@ div.creative-content ul {
 	padding-bottom: 13%;
 }
 
-.work-container img{
-	width:100%
+.work-container img {
+    width: 84%;
+    margin: 0 auto;
+    display: block;
+    padding-bottom: 6%;
 }
 
-
-
+.dsc-work{
+		margin-top: 10%;
+		padding-bottom: 13%;
+		}
 
 
 
