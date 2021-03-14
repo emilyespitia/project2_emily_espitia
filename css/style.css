@@ -387,7 +387,19 @@ textarea {
     display: block;
 		width: 65%;
 }
+
+/* .color2.vh{
+	height: 100vh;
+} */
+
 }
+
+/* @media(min-width: 680px) {
+.color2 {
+	height: none
+}
+} */
+
 
 /* ******************************************START 700px MIN MEDIA QUERY****************************************** */
 @media(min-width: 700px) {
@@ -494,7 +506,10 @@ textarea {
     padding: 1% 1%;
 	}
 
-
+.everything-contact{
+	max-width: 960px;
+	margin: 0 auto;
+}
 
 }
 /* ******************************************START 800px MIN MEDIA QUERY****************************************** */
@@ -560,8 +575,6 @@ footer.desktop-menu1.about-bottom-footer{
 	.desktop-menu1.work-footer {
 	    margin: 25% 0 7% 0;
 }
-
-
 
 
 
