@@ -25,9 +25,10 @@ body{
 	padding-bottom: 15%;
 }
 
-body.color2 {
+.color2 {
     background: linear-gradient(28deg, #fde6d6, white, #dadada);
     font-family: 'Jost', sans-serif;
+		/* height: 100vh; */
 }
 
 
@@ -85,11 +86,12 @@ body.color2 {
 /*****************************  INDEX.hmtl MOBILE STYLES *****************************/
 /* * ******* images ******** */
 
+
 .home-img {
-	width: 100%;
-    margin-top: 13%;
-    max-width: 100%;
-	}
+  width: 100%;
+  margin-top: 2%;
+  max-width: 100%;
+}
 
 
 .home figcaption{
@@ -200,16 +202,64 @@ div.creative-content ul {
 		}
 
 /*****************************  contact.hmtl MOBILE STYLES *****************************/
+.color2.vh{
+	height: 100vh;
+}
+
 .contact-img {
 	width: 70%;
 	max-width: 1000px;
+	margin-top: 10%;
 }
 
-.chat-container{
-
-	border-style: solid;
-	border-width: 5px;
+.chat{
+	padding: 2% 0;
+	text-align: center;
 }
+
+/* contact form */
+
+.chat-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 15%;
+    /* padding-bottom: 65%; */
+    padding-top: 4%;
+	}
+
+.chat-container h2{
+	    margin: 7% 0 5% 0;
+}
+
+.form-container{
+	background: #f1b7a7;
+	width: 89%
+}
+
+
+.label_input_wrap{
+  display: block;
+}
+
+label{
+  font-weight: bold;
+}
+
+input{
+  padding:5px 10px;
+  border-radius: 3px;
+}
+
+
+textarea {
+    font-family: 'Jost';
+    width: 87%;
+ }
+
+
+
+
 
 
 
@@ -226,6 +276,7 @@ div.creative-content ul {
 }
 
 /* ******************************************START 526px MAX MEDIA QUERY****************************************** */
+
 @media (min-width: 526px){
 
 /* about */
@@ -237,31 +288,40 @@ div.creative-content ul {
 	font-size: 1.2rem;
 }
 
-}
+
+/* work.html */
+.chat-container {
+    display: flex;
+    justify-content: ;
+    flex-direction: column;
+    align-items: center;
+	}
+
+	}
 
 /* ******************************************START 600px MAX MEDIA QUERY****************************************** */
 @media (min-width: 600px) {
 
 
 /*****work.html**********/
-	.uf-container2{
-		display: flex;
-	}
+.uf-container2{
+	display: flex;
+}
 
-	.dsc-container2 {
+.dsc-container2 {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+	   justify-content: center;
+}
+
+
+.uf-container2 {
     display: flex;
-    align-items: center;
+    align-content: center;
     flex-direction: row;
-		   justify-content: center;
+    justify-content: center;
 	}
-
-
-	.uf-container2 {
-	    display: flex;
-	    align-content: center;
-	    flex-direction: row;
-	    justify-content: center;
-		}
 
 .dsc-work {
 	margin-right: -6%;
@@ -276,19 +336,22 @@ div.creative-content ul {
     display: block;
 		width: 65%;
 }
+}
 
 /* ******************************************START 700px MIN MEDIA QUERY****************************************** */
-@media (min-width: 700px) {
+@media(min-width: 700px) {
 
 /* **** TURN OFF HAMBURGER MENU ****** */
-	.menu, .hamburger, .cross{
-		display: none;
-	}
 
-	.big-container{
-		padding-bottom: 1%;
-	 	margin-top: -7%;
-	}
+.menu, .hamburger, .cross{
+	display: none;
+}
+
+.big-container{
+	padding-bottom: 1%;
+ 	margin-top: -7%;
+}
+
 
 
 /* **************** universal- TURN ON DESKTOP NAV (TOP) ***************** */
@@ -313,15 +376,14 @@ div.creative-content ul {
 	color: #f1b7a7;
 }
 
-
-/* **************** univeral -TURN ON DESKTOP NAV (Bottom) ***************** */
+/* **************** universal -TURN ON DESKTOP NAV (Bottom) ***************** */
 .desktop-menu1{
-		display: block;
-		width: 100%;
-		/* list-style-type: none; */
-		text-align: center;
-		margin: 37% 0 4% 0;
-		font-size: 1.2rem;
+	display: block;
+	width: 100%;
+	/* list-style-type: none; */
+	text-align: center;
+	margin: 33% 0 4% 0;
+	font-size: 1.2rem;
 }
 
 .desktop-menu1 ul{
@@ -348,11 +410,6 @@ div.creative-content ul {
 	color: #f1b7a7;
 }
 
-/******************** INDEX.html ***********/
-/* bottom nav */
-.desktop-menu1.home-bottom ul {
-    margin-top: -14%;
-}
 
 /******************** ABOUT.html ***********/
 p.welcome {
@@ -370,7 +427,25 @@ h2.pink-work {
 padding: 2% 0;
 }
 
+/******************** CONTACT.html ***********/
+.chat-container{
+	margin-top: -21%;
+}
 
+input{
+	padding: 19px 10px;
+	border-radius: 3px;
+}
+
+textarea {
+    font-family: 'Jost';
+    width: 87%;
+    padding: 1% 1%;
+	}
+
+
+
+}
 /* ******************************************START 800px MIN MEDIA QUERY****************************************** */
 @media (min-width: 800px) {
 
