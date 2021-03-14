@@ -201,6 +201,34 @@ div.creative-content ul {
 		padding-bottom: 13%;
 		}
 
+/* hover stuff */
+.hoverText {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #f1b7a7;
+}
+
+.hoverContainer {
+  position: relative;
+}
+
+.hoverContainer:hover .overlay {
+  opacity: 1;
+}
 /*****************************  contact.hmtl MOBILE STYLES *****************************/
 .color2.vh{
 	height: 100vh;
